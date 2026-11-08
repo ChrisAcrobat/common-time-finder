@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Common Time Finder</title>
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./styles/app.css">
+<script type="importmap">{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.min.js",
+    "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.core.js": "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.core.min.js"
+  },
+  "integrity": {
+    "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.module.min.js": "sha384-9bdc/m98xZLhaPIxVG2gNC2aYWzhRmURsrQYkzArHqsLSVeeqWmrumq2FsPRnJEB",
+    "https://cdn.jsdelivr.net/npm/three@0.187.0/build/three.core.min.js": "sha384-3j9YQEXY3lwfCB0T8j+4Y3dnA7/9TTX6SzmSRyT9wMgAxNYsftvmGtTZt1QQVmyH"
+  }
+}</script>
+<script type="module" src="./main.js"></script>
+</head>
+<body>
+<div id="app">
+<header><div class="brand"><strong data-i18n="app.name"></strong><small data-i18n="app.tagline"></small></div><nav id="navigation"></nav></header>
+<div id="workspace"><section data-view="clocks"><div id="clock-list"></div></section><section data-view="globe"><div id="globe-viewport"></div><p id="globe-message" role="status"></p></section></div>
+<footer><div id="timeline"></div><div class="footer-row"><span id="sync-status"></span><button id="credits-button" data-i18n="attribution.title"></button></div></footer>
+<div id="notice" role="status" aria-live="polite"></div>
+<div id="panels"></div><div id="imports"></div>
+</div>
+</body></html>
